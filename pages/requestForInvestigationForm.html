@@ -8,7 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
         <!-- Site Properties -->
-		    <link rel="stylesheet" type="text/css" href="../semantic/semantic.min.css">
+		<link rel="stylesheet" type="text/css" href="../semantic/semantic.min.css">
 
         <link rel="stylesheet" type="text/css" href="../semantic/components/reset.css">
         <link rel="stylesheet" type="text/css" href="../semantic/components/site.css">
@@ -46,35 +46,40 @@
         <div class="ui borderless main menu">
             <div class="ui text container">
                 <div class="header item">
-                    <!--img class="logo" src="assets/images/logo.png"-->
+                    <i class="file icon"></i>
                     委託調査申込書
                 </div>
                 <div class="ui floated dropdown item">
                     Index
                     <i class="dropdown icon"></i>
                     <div class="menu">
-                    <a href="#top" class="item">このサイトについて</a>
-                    <a href="#list" class="item">Reports</a>
+                    <a href="#01" class="item">（１）調査題目</a>
+                    <a href="#02" class="item">（２）調査目的</a>
+                    <a href="#03" class="item">（３）調査概要</a>
+                    <a href="#04" class="item">（４）調査実施場所又は担当研究室等</a>
+                    <a href="#05" class="item">（５）調査実施期間について</a>
+                    <a href="#06" class="item">（６）委託研究員の派遣における注意事項</a>
+                    <a href="#07" class="item">（７）その他の希望する事項</a>
                     </div>
                 </div>
                 <div class="ui right floated dropdown item">
                     List
                     <i class="dropdown icon"></i>
                     <div class="menu">
-                        <a href="../index.html" class="item">Home</a>
+                        <a href="../index.html" class="item"><i class="file icon"></i>Home</a>
                         <div class="divider"></div>
                         <div class="header">Reports</div>
-                        <a href="../pages/butchosMemo.html" class="item">ぶちょーのメモ</a>
-                        <a href="../pages/requestForInvestigationForm.html" class="item">委託調査申込書</a>
+                        <a href="butchosMemo.html" class="item"><i class="file icon"></i>ぶちょーのメモ</a>
+                        <a href="requestForInvestigationForm.html" class="item"><i class="file icon"></i>委託調査申込書</a>
                         <div class="item">
-                            &nbsp;xx区x丁目xx08椅子に関する調査書
+                            &nbsp;<i class="folder icon"></i>xx区x丁目xx08椅子に関する調査書
                                 <div class="menu">
-                                    <div class="header">xx区x丁目xx08椅子に関する調査書</div>
-                                    <div class="item">調査に関して</div>
-                                    <a href="../pages/chairReports.html" class="item">chair-reports</a>
-                                    <div class="item">disc-reports</div>
-                                    <div class="item">virtual-disc-reports</div>
-                                    <div class="item">unregistered-virtual-world-reports</div>
+                                    <div class="header"><i class="folder icon"></i>xx区x丁目xx08椅子に関する調査書</div>
+                                    <a href="writtenInvestigationOfXX-X-XX08Chair/abstracts.html" class="item"><i class="file icon"></i>調査に関して</a>
+                                    <a href="writtenInvestigationOfXX-X-XX08Chair/chairReports.html" class="item"><i class="file icon"></i>chair-reports</a>
+                                    <div class="item"><i class="file icon"></i>disc-reports</div>
+                                    <div class="item"><i class="file icon"></i>virtual-disc-reports</div>
+                                    <div class="item"><i class="file icon"></i>unregistered-virtual-world-reports</div>
                                 </div>
                         </div>
                     </div>
@@ -88,80 +93,141 @@
             <p style="text-align: right">暦　2X0X年　2月　27日</p>
             <p>国立調査機関 XXXX研究所<br>
             仮想遠隔操作本部　機関連携部長 殿</p>
-            
-            <div class="ui card" style="float: right">
-                <table class="ui table">
-                    <tbody>
-                      <tr>
-                        <td style="text-align: right"><font size="2">住所</font></td>
-                        <td style="text-align: right"><font size="2">XXXX-02 西XX区X丁目XX01-9</font></td>
-                      </tr>
-                      <tr>
-                        <td style="text-align: right"><font size="2">名称</font></td>
-                        <td style="text-align: right"><font size="2">国立研究機関仮想物質研究所</font></td>
-                      </tr>
-                    </tbody>
-                  </table>
-            </div>
-            <br><br><br>
-            <br><br><br>
-            <p>調査の委託を、下記のとおり申し込む。</p>
+            <p style="text-align: right">住所  XXXX-02 西XX区X丁目XX01-9<br>
+                名称  国立研究機関仮想物質研究所</p>
             <br>
+            <p>調査の委託を、下記のとおり申し込む。</p>
             <p style="text-align: center">記</p>
-            （１）調査題目
-仮想的な人体の遠隔操作による未登録の仮想空間の調査。
-未登録の仮想空間
+            <p id="01"><br></p>
+            <h3 class="ui header">（１）調査題目</h3>
+            <p>仮想的な人体の遠隔操作による未登録の仮想空間の調査。</p>
+            <img class="ui large image" 
+            onclick="$('.ui.modal.image01').modal('setting', 'transition', 'fade up').modal('show');" 
+            data-src="../static/img/requestForInvestigationForm/image01.png">
+            <p>未登録の仮想空間</p>
 
-（２）調査目的
-以下２点を調査目的とする。
-１．仮想データを欠損させた要因の有無。
-主にマテリアル情報に欠損のある仮想データを「仮想データ拡張現実化装置」で出力した。
+            <div class="ui basic modal image01">
+                <br>
+                <div style="text-align: center">
+                    <img class="ui fluid image" src="../static/img/requestForInvestigationForm/image01.png">
+                </div>
+                <div class="header" style="text-align: center">未登録の仮想空間</div>
+            </div>
+            
+            <p id="02"><br></p>
+            <h3 class="ui header">（２）調査目的</h3>
+            <p>以下２点を調査目的とする。</p>
+            <p></p>１．仮想データを欠損させた要因の有無。
+            <img class="ui large image" 
+            onclick="$('.ui.modal.image02').modal('setting', 'transition', 'fade up').modal('show');" 
+            data-src="../static/img/requestForInvestigationForm/image02.png">
+            <p>主にマテリアル情報に欠損のある仮想データを「仮想データ拡張現実化装置」で出力した。</p>
 
-２．現実の人体に影響を与える要因の有無。
+            <div class="ui basic modal image02">
+                <br>
+                <div style="text-align: center">
+                    <img class="ui fluid image" src="../static/img/requestForInvestigationForm/image02.png">
+                </div>
+                <br>
+                <div class="header" style="text-align: center">主にマテリアル情報に欠損のある仮想データを「仮想データ拡張現実化装置」で出力した。</div>
+            </div>
 
+            <p>２．現実の人体に影響を与える要因の有無。</p>
 
+            <p id="03"><br></p>
+            <h3 class="ui header">（３）調査概要</h3>
+            <p>XX区X丁目XX08椅子の調査で未登録の仮想空間を発見した。</p>
 
-（３）調査概要
-XX区X丁目XX08椅子の調査で未登録の仮想空間を発見した。
+            <p>XX区X丁目XX08椅子は2X0X年1月20日 16時ごろ発生した死亡事故に関連するオブジェクトで本研究所にて調査を行なった。</p>
 
-XX区X丁目XX08椅子は2X0X年1月20日 16時ごろ発生した死亡事故に関連するオブジェクトで本研究所にて調査を行なった。
-正面：XX区X丁目XX08椅子。右：円盤状の物理オブジェクト。
+            <img class="ui large image" 
+            onclick="$('.ui.modal.image03').modal('setting', 'transition', 'fade up').modal('show');" 
+            data-src="../static/img/requestForInvestigationForm/image03.png">
+            <p>正面：XX区X丁目XX08椅子。右：円盤状の物理オブジェクト。</p>
 
-XX区X丁目XX08椅子内部に円盤状の物理オブジェクトを発見し解析した。「仮想データ」を抽出できた。マテリアル情報に欠損があった。仮想データ拡張現実化装置で出力した。
-欠損していた情報にはランバート反射のあるホワイトなマテリアルを指定してある。
+            <div class="ui basic modal image03">
+                <br>
+                <div style="text-align: center">
+                    <img class="ui fluid image" src="../static/img/requestForInvestigationForm/image03.png">
+                </div>
+                <br>
+                <div class="header" style="text-align: center">正面：XX区X丁目XX08椅子。右：円盤状の物理オブジェクト。</div>
+            </div>
 
-マテリアル情報のあったオブジェクトの長方形の部分に乗るように「XX区X丁目XX08椅子内部の円盤状の物理オブジェクトに酷似したオブジェクト」を発見した。このオブジェクトからは「ポータルリンクファイル」が抽出できた。ポータルリンクファイルの欠損は少なくアクセスできた。
-アクセス先は未登録の仮想空間であり調査によって「音」に反応しまた音によって空間が安定することがわかっている。
-未登録の仮想空間１
+            <p>XX区X丁目XX08椅子内部に円盤状の物理オブジェクトを発見し解析した。「仮想データ」を抽出できた。マテリアル情報に欠損があった。仮想データ拡張現実化装置で出力した。</p>
 
-仮想空間に入ると白い空間に「XX区X丁目XX08椅子に酷似したオブジェクト」と扉を発見した。仮想空間を安定させる音源としてポータルリンクに使用されているオブジェクトを本研究所が配置している。
+            <img class="ui large image" 
+            onclick="$('.ui.modal.image04').modal('setting', 'transition', 'fade up').modal('show');" 
+            data-src="../static/img/requestForInvestigationForm/image02.png">
+            <p>欠損していた情報にはランバート反射のあるホワイトなマテリアルを指定してある。</p>
 
-扉の先は広めのコンクリートを彷彿とさせるオブジェクトで構成された空間が広がっていた。
-未登録の仮想空間２
+            <div class="ui basic modal image04">
+                <br>
+                <div style="text-align: center">
+                    <img class="ui fluid image" src="../static/img/requestForInvestigationForm/image02.png">
+                </div>
+                <br>
+                <div class="header" style="text-align: center">欠損していた情報にはランバート反射のあるホワイトなマテリアルを指定してある。</div>
+            </div>
 
-上記結果を踏まえ「第3回XX区X丁目XX08椅子の分析に係る検討会」が行われた。検討会の取り組み事項として「仮想的な人体の遠隔操作による調査の実施」が決議した。この調査に際し本研究所では実施不可のためこの調査を委託する。
+            <p>マテリアル情報のあったオブジェクトの長方形の部分に乗るように「XX区X丁目XX08椅子内部の円盤状の物理オブジェクトに酷似したオブジェクト」を発見した。このオブジェクトからは「ポータルリンクファイル」が抽出できた。ポータルリンクファイルの欠損は少なくアクセスできた。</p>
+            <p>アクセス先は未登録の仮想空間であり調査によって「音」に反応しまた音によって空間が安定することがわかっている。</p>
 
+            <img class="ui large image" 
+            onclick="$('.ui.modal.image05').modal('setting', 'transition', 'fade up').modal('show');" 
+            data-src="../static/img/requestForInvestigationForm/image01.png">
+            <p>未登録の仮想空間１</p>
 
-（４）調査実施場所又は担当研究室等
-国立研究機関仮想物質研究所本部
-仮想データ拡張現実化装置内で発見した未登録の仮想空間
+            <div class="ui basic modal image05">
+                <br>
+                <div style="text-align: center">
+                    <img class="ui fluid image" src="../static/img/requestForInvestigationForm/image01.png">
+                </div>
+                <br>
+                <div class="header" style="text-align: center">未登録の仮想空間１</div>
+            </div>
 
-（５）調査実施期間について
-開　始　　暦　　2X0X年　4月　1日
-終　了　　暦　　2X0X年　X月　X日
+            <p>仮想空間に入ると白い空間に「XX区X丁目XX08椅子に酷似したオブジェクト」と扉を発見した。仮想空間を安定させる音源としてポータルリンクに使用されているオブジェクトを本研究所が配置している。</p>
 
-（６）委託研究員の派遣における注意事項
-XX区X丁目XX08椅子の危険性が確認されています。
-報告によると触れただけで生命活動を停止させる因子をXX区X丁目XX08椅子は内包しています。研究所内のXX区X丁目XX08椅子には決して触れぬようお願いします。
+            <p>扉の先は広めのコンクリートを彷彿とさせるオブジェクトで構成された空間が広がっていた。</p>
+            <img class="ui large image" 
+            onclick="$('.ui.modal.image06').modal('setting', 'transition', 'fade up').modal('show');" 
+            data-src="../static/img/requestForInvestigationForm/image04.png">
+            <p>未登録の仮想空間２</p>
 
-また未登録の仮想空間内のXX区X丁目XX08椅子に酷似したオブジェクトにも近い危険性があると推測されますので十分にご注意ください。
+            <div class="ui basic modal image06">
+                <br>
+                <div style="text-align: center">
+                    <img class="ui fluid image" src="../static/img/requestForInvestigationForm/image04.png">
+                </div>
+                <br>
+                <div class="header" style="text-align: center">未登録の仮想空間２</div>
+            </div>
 
-（８）その他の希望する事項
-なし。
+            <p>上記結果を踏まえ「第3回XX区X丁目XX08椅子の分析に係る検討会」が行われた。検討会の取り組み事項として「仮想的な人体の遠隔操作による調査の実施」が決議した。この調査に際し本研究所では実施不可のためこの調査を委託する。</p>
 
-申込機関事務連絡先
+            <p id="04"><br></p>
+            <h3 class="ui header">（４）調査実施場所又は担当研究室等</h3>
+            <p>国立研究機関仮想物質研究所本部<br>
+            仮想データ拡張現実化装置内で発見した未登録の仮想空間</p>
 
-            <img class="ui fluid image" data-src="../static/img/butchosMemo/ぶちょーのメモ２.png">
+            <p id="05"><br></p>
+            <h3 class="ui header">（５）調査実施期間について</h3>
+            <p></p>開　始　　暦　　2X0X年　4月　1日
+            <p></p>終　了　　暦　　2X0X年　X月　X日
+
+            <p id="06"><br></p>
+            <h3 class="ui header">（６）委託研究員の派遣における注意事項</h3>
+            <p></p>XX区X丁目XX08椅子の危険性が確認されています。
+            <p></p>報告によると触れただけで生命活動を停止させる因子をXX区X丁目XX08椅子は内包しています。研究所内のXX区X丁目XX08椅子には決して触れぬようお願いします。
+
+            <p></p>また未登録の仮想空間内のXX区X丁目XX08椅子に酷似したオブジェクトにも近い危険性があると推測されますので十分にご注意ください。
+
+            <p id="07"><br></p>
+            <h3 class="ui header">（７）その他の希望する事項</h3>
+            <p></p>なし。
+
+            <p></p>申込機関事務連絡先
         </div>
         
         <!--share-->
@@ -171,10 +237,10 @@ XX区X丁目XX08椅子の危険性が確認されています。
                 <div class="three wide column">
                   <h4 class="ui inverted header">List</h4>
                   <div class="ui inverted link list">
-                    <a href="../index.html" class="item">Home</a>
-                    <a href="../pages/butchosMemo.html" class="item">ぶちょーのメモ</a>
-                    <a href="#" class="item">委託調査申込書</a>
-                    <a href="#" class="item">xx区x丁目xx08椅子に関する調査書</a>
+                    <a href="../index.html" class="item"><i class="file icon"></i>Home</a>
+                    <a href="../pages/butchosMemo.html" class="item"><i class="file icon"></i>ぶちょーのメモ</a>
+                    <a href="../pages/requestForInvestigationForm.html" class="item"><i class="file icon"></i>委託調査申込書</a>
+                    <a href="../pages/writtenInvestigationOfXX-X-XX08Chair/abstracts.html" class="item"><i class="folder icon"></i>xx区x丁目xx08椅子に関する調査書</a>
                   </div>
                 </div>
                 <div class="three wide column">
